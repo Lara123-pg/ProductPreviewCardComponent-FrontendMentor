@@ -38,7 +38,7 @@ export function ProductCard() {
             <footer>
                 <div className="footer">
                     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                    Coded by <a href="#">Lara Fernanda</a>.
+                    Coded by <a href="https://github.com/Lara123-pg/ProductPreviewCardComponent-FrontendMentor">Lara Fernanda</a>.
                 </div>
             </footer>
         </div>
