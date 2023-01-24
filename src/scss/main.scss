@@ -1,0 +1,20 @@
+@import 'global';
+@import 'variables';
+@import 'styleWH';
+@import 'display';
+@import 'fontColor';
+
+div.container {
+    @include styleWH(100vw, 100vh);
+    @include display(center, center, column);
+
+    font-size: 14px;
+
+    @import 'mainContent';
+
+    footer {
+        div.footer {
+            font-size: 1rem
+        }
+    }   
+}

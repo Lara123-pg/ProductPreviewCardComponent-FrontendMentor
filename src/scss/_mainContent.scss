@@ -1,0 +1,96 @@
+main {
+    @include styleWH(100%, 100%);
+    @include display(center, center);
+
+    div.card {
+        @include styleWH(36%, 55%);
+        @include display('', '', row);
+
+        background-color: $colorCard;
+
+        border-radius: 1rem;
+        
+        div.imageWeb {
+            width: 800px;
+        
+            img {
+                @include styleWH(100%, 100%);
+
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+        }
+
+        div.imageMobile {
+            display: none;
+        }
+
+        div.contents {
+            @include display(space-around, '', column);
+   
+            width: 800px;
+
+            padding: 1em;
+
+            padding-left: 2em;
+
+            span.name {
+                @include fontColor(('Montserrat', sans-serif), 500 , 0.7rem, $colorParagraph);
+          
+                letter-spacing: 3px;
+            }
+
+            h1 {
+                @include fontColor(('Fraunces', sans-serif), 500, 1.7rem, $colorTitle);
+
+                line-height: 35px;
+
+                width: 80%;
+            }
+
+            p {
+                @include fontColor(('Montserrat', sans-serif), 500, 0.8rem, $colorParagraph);
+    
+                width: 92%;
+            }
+
+            div.prices {
+                @include display('', center, '');
+
+                width: 100%;
+
+                span.price1 {
+                    @include fontColor(('Fraunces', sans-serif), 700, 2rem, $colorButtonText);
+
+                    margin-right: 0.5em;
+                }
+
+                del {
+                    @include fontColor(( 'Montserrat', sans-serif), 500, 0.8rem, $colorParagraph);
+                }
+            }
+
+            button {
+                @include styleWH(95%, 15%);
+                @include display(center, center);
+                @include fontColor(('Montserrat', sans-serif), 700, 0.8rem, $colorCard);
+
+                background-color: $colorButtonText;
+
+                border-radius: 1rem;
+                border: 0;
+
+                img {
+                    padding-right: 0.6em;
+                }
+
+                &:hover {
+                    background-color: $colorButtonHover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive';

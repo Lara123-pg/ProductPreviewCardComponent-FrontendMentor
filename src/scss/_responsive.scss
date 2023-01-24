@@ -1,0 +1,115 @@
+@media(max-width: 1115px) {
+    main {
+        div.card {
+            div.imageWeb {
+                width: 900px;
+            
+                img {
+                    @include styleWH(105%, 100%);
+    
+                }
+            }
+    
+            div.contents {
+                h1 {
+                    @include fontColor(('Fraunces', sans-serif), 500, 1.5rem, $colorTitle);
+                }
+            }
+        }
+    }
+}
+
+@media((min-width: 764px) and (max-width: 1158px)) {
+    main {
+        div.card {
+            width: 50%;
+            div.imageWeb {
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media (max-width: 763px) {
+    main {
+        div.card {
+            @include styleWH(36%, 75%);
+            @include display('', '', column);
+
+            div.imageMobile {
+                display: flex;
+
+                img {
+                    @include styleWH(100%, 100%);
+    
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                }
+            }
+            
+            div.imageWeb {
+                display: none; 
+            }
+    
+            div.contents {
+                @include styleWH(100%, 100%);
+
+                padding-left: 1em;
+
+                span.name {
+                    @include fontColor(('Montserrat', sans-serif), 500 , 0.7rem, $colorParagraph);
+                }
+    
+                h1 {
+                    @include fontColor(('Fraunces', sans-serif), 500, 1.7rem, $colorTitle);
+               
+                    width: 100%;
+                }
+    
+                p {
+                    @include fontColor(('Montserrat', sans-serif), 500, 0.75rem, $colorParagraph);
+        
+                    width: 100%;
+                }
+    
+                div.prices {
+                    span.price1 {
+                        @include fontColor(('Fraunces', sans-serif), 700, 1.8rem, $colorButtonText);
+                    }
+    
+                    del {
+                        @include fontColor(( 'Montserrat', sans-serif), 500, 0.7rem, $colorParagraph);
+                    }
+                }
+    
+                button {
+                   border-radius: 0.5rem;   
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 615px) {
+    main {
+        div.card {
+            @include styleWH(40%, 75%);
+
+            div.contents {
+                h1 {
+                    @include fontColor(('Fraunces', sans-serif), 500, 1.57rem, $colorTitle);
+               
+                    width: 100%;
+                }
+            }
+        }
+    }  
+}
+
+@media (max-width: 545px) {
+    main {
+        div.card {
+            @include styleWH(50%, 75%);
+        }
+    }  
+}
