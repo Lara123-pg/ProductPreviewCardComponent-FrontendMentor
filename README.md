@@ -29,6 +29,8 @@ Product Preview Card Component é um desafio da plataforma FrontendMentor, que t
 
 # Link do projeto hospedado
 
+https://product-preview-card-component-frontend-mentor-three.vercel.app/
+
 # Autor
 
 Lara Fernanda
