@@ -36,3 +36,5 @@ Lara Fernanda
 Email: lamorimalvescavalcante@gmail.com
 
 # Licença
+
+Este projeto está sob a licença MIT - https://github.com/Lara123-pg/ProductPreviewCardComponent-FrontendMentor/blob/main/LICENSE
